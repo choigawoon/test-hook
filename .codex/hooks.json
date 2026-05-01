@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Users/choigawoon/ai-agent-tf/test-codex/.codex/hooks/mlua-session-start.sh\"",
+            "timeout": 120,
+            "statusMessage": "Starting mLua LSP daemon"
+          }
+        ]
+      }
+    ]
+  }
+}
